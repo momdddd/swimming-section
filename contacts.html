@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Контактная информация магазина музыкальных инструментов. Удобные способы связи и расположение.">
+    <title>Контакты | Магазин музыкальных инструментов</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fafafa;
+            color: #333;
+        }
+
+        header {
+            width: 100%;
+            padding: 40px 20px;
+            background-color: #0066cc;
+            color: white;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        nav {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #0066cc;
+            font-size: 1.2em;
+            margin: 0 15px;
+            padding: 10px;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff6600;
+            transform: translateY(-3px);
+        }
+
+        section {
+            width: 80%;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: white;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .contact-info p {
+            font-size: 1.2em;
+        }
+
+        .contact-form {
+            margin-top: 30px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .contact-form button {
+            background-color: #0066cc;
+            color: white;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #adadad;
+        }
+
+        .map-container {
+            margin-top: 30px;
+            width: 100%;
+            height: 300px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0066cc;
+            color: white;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            nav a {
+                font-size: 1em;
+                margin: 10px 0;
+            }
+
+            section {
+                width: 90%;
+                padding: 20px;
+            }
+
+            .contact-form input, .contact-form textarea {
+                font-size: 0.95em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Контакты</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">О нас</a> |
+        <a href="contacts.html">Контакты</a> |
+        <a href="prices.html">Цены</a>
+    </nav>
+
+    <section>
+        <h2>Свяжитесь с нами</h2>
+        <div class="contact-info">
+            <p><strong>Адрес:</strong> г. Караганда, ул. ИдрисКрутой, 95 </p>
+            <p><strong>Телефон:</strong> +7 (747) 397-58-63</p>
+            <p><strong>Email:</strong> idriskazel@gmail.com</p>
+            <p><strong>Рабочие часы:</strong> Пн\Пт: 10:00-19:00, Сб\Вс: 11:00-16:00</p>
+        </div>
+
+        <h3>Форма обратной связи</h3>
+        <p>Если у вас есть вопросы или предложения, заполните форму ниже, и мы с вами свяжемся!</p>
+        
+        <form class="contact-form" action="#" method="POST">
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Ваш email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Ваше сообщение:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Отправить сообщение</button>
+        </form>
+
+        <h3>Наша локация</h3>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.0393933607735!2d73.07222631534333!3d49.80534927943156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb0b913b3c953%3A0x7b7a2a5a4e4a06f2!2z0KHRg9C70LDRh9C-0ZfQvtC40YbQsNC90YLRgywgMjUsINCi0LXQutCw0YLRj9C60LDRj9Cw!5e0!3m2!1sru!2skz!4v1699910674899!5m2!1sru!2skz" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Магазин музыкальных инструментов | <a href="contacts.html">Контакты</a></p>
+    </footer>
+</body>
+</html>
